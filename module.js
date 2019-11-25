@@ -1,3 +1,5 @@
-module.export = area = (x, y) => {
-  x * y;
+area = (x, y) => {
+  return x * y;
 };
+
+exports.area = area;

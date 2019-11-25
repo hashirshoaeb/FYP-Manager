@@ -1,3 +1,3 @@
-require("./module");
+data = require("./module.js");
 
-console.log(area(6, 6));
+console.log(data.area(6, 7));
