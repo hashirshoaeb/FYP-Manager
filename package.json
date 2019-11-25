@@ -1,0 +1,24 @@
+{
+  "name": "fyp-manager",
+  "version": "1.0.0",
+  "description": "final year project manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashirshoaeb/FYP-Manager.git"
+  },
+  "keywords": [
+    "software",
+    "node",
+    "react"
+  ],
+  "author": "Hashir Shoaib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hashirshoaeb/FYP-Manager/issues"
+  },
+  "homepage": "https://github.com/hashirshoaeb/FYP-Manager#readme"
+}
