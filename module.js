@@ -1,10 +1,19 @@
-area = (x, y) => {
-  return x * y;
-};
+// area = (x, y) => {
+//   return x * y;
+// };
 
-perimeter = (x, y) => {
-  return 2 * (x + y);
-};
+// perimeter = (x, y) => {
+//   return 2 * (x + y);
+// };
 
-exports.area = area;
-exports.perimeter = perimeter;
+// callback(err, response)
+module.exports = (x, y, callback) => {
+  callback(null, {
+    area: (x, y) => {
+      return x * y;
+    },
+    perimeter: (x, y) => {
+      return 2 * (x + y);
+    }
+  });
+};

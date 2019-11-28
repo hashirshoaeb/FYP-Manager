@@ -1,4 +1,11 @@
-data = require("./module.js");
+var data = require("./module");
 
-console.log(data.area(6, 7));
-console.log(data.perimeter(7, 6));
+data(2, 4, (err, response) => {
+  if (err) {
+    console.log(err.message);
+  } else {
+    console.log(response);
+    console.log(response.area(3, 4));
+    console.log(response.perimeter(3, 2));
+  }
+});
