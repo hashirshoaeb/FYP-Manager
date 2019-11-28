@@ -1,10 +1,11 @@
 # Final Year Project Manager
 
+FYP-Manager is a web application that allow students to work together and manage their project progress and meetings with supervisor remotely.
+
 ## Requirements
 
 - Entities
-
-  - student
+  - student (Team lead and members)
   - teacher (Supervisor and Cosupervisor)
   - project
   - timeline
@@ -12,12 +13,15 @@
   - Notification
   - Authentication
   - log
-
-Student can view the list fo projects.
-Student can request for a project.
+- Student can view the list of projects.
+- Student can request for a project.
+- Student will have one project at a time
+- Student will have a project timeline once it is accepted by a supervisor.
+- Student can invite other students to make team.
+- Teacher can approve one student for one project.
 
 ## what Platform/Dependencies should I use?
 
-- Bootstrap
+- Bootstrap / material UI
 - React
-- .Net or Nodejs
+- .Net / Nodejs
