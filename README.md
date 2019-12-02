@@ -5,10 +5,10 @@ FYP-Manager is a web application that allow students to work together and manage
 ## Requirements
 
 - Entities
-  - student (Team lead and members)
-  - teacher (Supervisor and Cosupervisor)
+  - student (Team leader and members)
+  - teacher (Supervisor and Co supervisor)
   - project
-  - timeline
+  - timeline (milestone)
   - stars
   - Notification
   - Authentication
@@ -19,6 +19,12 @@ FYP-Manager is a web application that allow students to work together and manage
 - Student will have a project timeline once it is accepted by a supervisor.
 - Student can invite other students to make team.
 - Teacher can approve one student for one project.
+- Teacher can create project.
+- Teacher who create project will be the supervisor for that project.
+- Supervisor can send invitation to other teachers to be the co supervisor for his project.
+- Team leader can set milestones.
+- There will be an "issues" tab, where students and teachers can discuss issue,
+- Anyone can raise issue.
 
 ## what Platform/Dependencies should I use?
 
