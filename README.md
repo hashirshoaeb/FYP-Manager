@@ -20,6 +20,9 @@ FYP-Manager is a web application that allow students to work together and manage
 - Student can invite other students to make team.
 - Teacher can approve one student for one project.
 
+who can add and set milestones?
+who can schedule meetings?
+
 ## what Platform/Dependencies should I use?
 
 - Bootstrap / material UI
