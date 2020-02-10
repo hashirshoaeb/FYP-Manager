@@ -1,50 +1,16 @@
 const express = require('express');
+const c = require(`${__dirname}/../controllers/userController.js`);
 const userRouter = express.Router();
-
-const getAllUsers = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'NOT DEFINED YET'
-  });
-};
-
-const getUser = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'NOT DEFINED YET'
-  });
-};
-
-const createUser = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'NOT DEFINED YET'
-  });
-};
-
-const updateUser = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'NOT DEFINED YET'
-  });
-};
-
-const deleteUser = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'NOT DEFINED YET'
-  });
-};
 
 userRouter
   .route('/')
-  .get(getAllUsers)
-  .post(createUser);
+  .get(c.getAllUsers)
+  .post(c.createUser);
 
 userRouter
   .route('/:id')
-  .get(getUser)
-  .patch(updateUser)
-  .delete(deleteUser);
+  .get(c.getUser)
+  .patch(c.updateUser)
+  .delete(c.deleteUser);
 
 module.exports = userRouter;
