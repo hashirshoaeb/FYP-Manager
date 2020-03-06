@@ -7,10 +7,18 @@ class Signin extends Component {
   }
   render() {
     return (
-      <div>
-        <h1>Text Signin</h1>
+      <div className="container">
+        <h1>SignIn for Student</h1>
 
-        <button>B</button>
+        <h4>Enter Name</h4>
+
+        <input type="text"></input>
+        <h4>Email</h4>
+        <input type="text"></input>
+        <h4>Password</h4>
+        <input type="text"></input>
+        <br></br>
+        <button className="m 12"> Signin </button>
       </div>
     );
   }
