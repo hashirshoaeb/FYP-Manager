@@ -17,8 +17,11 @@ class Login extends Component {
     //   textAlign: "center"
     // };
     return (
-      <div className="container">
-        <div className="card" style={card}>
+      <div className="justify-content-md-center  bg-transparent  d-flex  align-items-center ">
+        <div
+          className="card shadow-lg p-3 mb-5 bg-transparent rounded"
+          style={card}
+        >
           <form className="px-4 py-3">
             <h1>Login</h1>
             <div className="form-group">
