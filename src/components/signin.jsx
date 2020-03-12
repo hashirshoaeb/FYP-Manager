@@ -25,7 +25,7 @@ class Signin extends Component {
     return (
       <div
         //  styles={{ backgroundImage: `url(${pic})` }}
-        className="justify-content-md-center min-vh-100 d-flex  align-items-center flex-wrap "
+        className="justify-content-md-center bgstyle min-vh-100 d-flex  align-items-center flex-wrap "
       >
         <div className="row ">
           <div className="col">

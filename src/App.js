@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
-//import Signin from "./components/signin";
+import Signin from "./components/signin";
 import "bootstrap/dist/css/bootstrap.css";
 import Login from "./components/Login";
-//import Slider from "./components/Slider";
+import MainBody from "./components/MainBody";
 function App() {
   return (
     <div>
-      <Login></Login>
+      <MainBody></MainBody>
     </div>
   );
 }

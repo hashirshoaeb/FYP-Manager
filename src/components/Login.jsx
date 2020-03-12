@@ -17,13 +17,13 @@ class Login extends Component {
     //   textAlign: "center"
     // };
     return (
-      <div className="justify-content-md-center  bg-transparent  d-flex  align-items-center ">
+      <div className="justify-content-md-center  bgstyle min-vh-100 bg-transparent  d-flex  align-items-center ">
         <div
           className="card shadow-lg p-3 mb-5 bg-transparent rounded"
           style={card}
         >
           <form className="px-4 py-3">
-            <h1>Login</h1>
+            <h1> Login</h1>
             <div className="form-group">
               <label for="expamelefor email">Email:</label>
               <input
@@ -48,7 +48,7 @@ class Login extends Component {
                 </label>
               </div>
             </div>
-            <button className="btn btn-secondary btn-sm">Login</button>
+            <button className="btn btn-secondary btn-sm ">Login</button>
           </form>
         </div>
       </div>
