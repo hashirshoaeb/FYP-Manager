@@ -1,0 +1,35 @@
+{
+  "App": "Fyp Manager",
+  "App_desc": "     Final Year Project Manager is a web application that connects students and projects supervisors remotly.",
+
+  "Fyp": [
+    {
+      "id": "01",
+      "Fyp_title": "Fyp manager",
+      "Supervisor": "Aimal Khan",
+      "Fyp_desc": "This was an Abbasi's Project in 5th semester and aimal khan was so excited to see and show his desire of making his own home automated",
+      "Fyp_tag": ["Matlab", "c++", "Microcontroller"]
+    },
+    {
+      "id": "02",
+      "Fyp_title": "Home Automation",
+      "Supervisor": "Aimal Khan",
+      "Fyp_desc": "This was an Abbasi's Project in 5th semester and aimal khan was so excited to see and show his desire of making his own home automated",
+      "Fyp_tag": ["Matlab", "c++", "Microcontroller"]
+    },
+    {
+      "id": "03",
+      "Fyp_title": "Home Automation",
+      "Supervisor": "Aimal Khan",
+      "Fyp_desc": "This was an Abbasi's Project in 5th semester and aimal khan was so excited to see and show his desire of making his own home automated",
+      "Fyp_tag": ["Matlab", "c++", "Microcontroller"]
+    },
+    {
+      "id": "04",
+      "Fyp_title": "Home Automation",
+      "Supervisor": "Aimal Khan",
+      "Fyp_desc": "This was an Abbasi's Project in 5th semester and aimal khan was so excited to see and show his desire of making his own home automated",
+      "Fyp_tag": ["Matlab", "c++", "Microcontroller"]
+    }
+  ]
+}
