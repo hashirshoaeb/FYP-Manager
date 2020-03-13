@@ -11,28 +11,15 @@ class Project extends Component {
   }
 
   render() {
-<<<<<<< HEAD
     return (
-     
-
-        {/* <div className="card-deck">
-=======
-    return {
-      /* <div className="card-deck">
->>>>>>> frontend
-            {this.state.data.map(d => (
-              <ProjectCard key={d.id} data={d}>
-                {" "}
-              </ProjectCard>
-            ))}
-<<<<<<< HEAD
-          </div> */}
+      <div className="card-deck">
+        {this.state.data.map(d => (
+          <ProjectCard key={d.id} data={d}>
+            {" "}
+          </ProjectCard>
+        ))}
       </div>
     );
-=======
-          </div> */
-    };
->>>>>>> frontend
   }
 }
 
