@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fas, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faHeart } from "@fortawesome/free-solid-svg-icons";
 class Footer extends Component {
   constructor(props) {

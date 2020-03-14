@@ -1,12 +1,13 @@
 import React from "react";
-import "./App.css";
-import Signin from "./components/Signin";
 import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 // import Login from "./components/Login";
 import MainBody from "./components/MainBody";
 import Project from "./components/Project";
-import Footer from "./components/Footer";
+import Signin from "./components/Signin";
 import Working from "./components/Working";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <div>
