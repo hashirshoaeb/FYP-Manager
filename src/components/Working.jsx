@@ -14,9 +14,9 @@ class Working extends Component {
         <div className="row">
           <div className="col-md-6 text-center">
             <h1 className="display-4 my-5">Step 1</h1>
-            <p className="lead">Chooose your favourite project.</p>
-            <p className="lead">Get Signed up.</p>
-            <p className="lead">make your team.</p>
+            <p className="lead">Select a project that matches your interests</p>
+            <p className="lead">Get Signed up as Student.</p>
+            <p className="lead">Make your team.</p>
           </div>
           <div className="col-md-6">
             <img
@@ -35,14 +35,14 @@ class Working extends Component {
           </div>
           <div className="col-md-6 text-center">
             <h1 className="display-4 my-5">Step 2</h1>
-            <p className="lead">Request Supervisor.</p>{" "}
+            <p className="lead">Request Supervisor for project.</p>{" "}
             <p className="lead">Wait for approval.</p>
-            <p className="lead">Set Timline.</p>
-            <p className="lead">set milestones.</p>
+            <p className="lead">Setup Timeline.</p>
+            <p className="lead">Discuss Milestones.</p>
           </div>
           <div className="col-md-6 text-center">
-            <h1 className="display-4 my-5">Step 1</h1>
-            <p className="lead">Start working on your FYP.</p>
+            <h1 className="display-4 my-5">Step 3</h1>
+            <p className="lead">Start working on your project.</p>
             <p className="lead">Collaborate remotly with your team.</p>
             <p className="lead">Set meeting with your supervisor.</p>
             <p className="lead">Get Grades.</p>

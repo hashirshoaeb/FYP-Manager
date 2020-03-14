@@ -10,12 +10,8 @@ import Working from "./components/Working";
 function App() {
   return (
     <div>
-      <MainBody></MainBody>
-      <div className="jumbotron">
-        <div className="card-deck">
-          <Project></Project>
-        </div>
-      </div>
+      <MainBody></MainBody>    
+      <Project></Project>    
       <Working></Working>
       <Signin></Signin>
       <Footer></Footer>

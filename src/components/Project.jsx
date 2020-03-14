@@ -12,19 +12,21 @@ class Project extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
-        <h1 className="display-3 text-center my-5">
-          {" "}
-          Available Projects For Students
-        </h1>
-        <div className="card-deck my-5">
-          {this.state.data.map(d => (
-            <ProjectCard key={d.id} data={d}>
-              {" "}
-            </ProjectCard>
-          ))}
+      <div className="jumbotron">  
+        <div className="container-fluid">
+          <h1 className="display-4 text-center">
+            {" "}
+            Recent Projects
+          </h1>
+          <div className="card-deck my-5">
+            {this.state.data.map(d => (
+              <ProjectCard key={d.id} data={d}>
+                {" "}
+              </ProjectCard>
+            ))}
+          </div>
         </div>
-      </div>
+      </div> 
     );
   }
 }
