@@ -14,7 +14,10 @@ class Footer extends Component {
 
   render() {
     return (
-      <footer style={this.state.bgStyle} className="mt-auto py-3 text-center">
+      <footer
+        style={this.state.bgStyle}
+        className="mt-auto py-3 text-center mt-5"
+      >
         {/* <strong> &copy; 2019 </strong>*/}
         <FontAwesomeIcon icon={faCode} /> with{" "}
         <FontAwesomeIcon icon={faHeart} /> by{" "}

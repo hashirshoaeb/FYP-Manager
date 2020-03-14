@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import MainBody from "./components/MainBody";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
+import Working from "./components/Working";
 function App() {
   return (
     <div>
@@ -15,6 +16,7 @@ function App() {
           <Project></Project>
         </div>
       </div>
+      <Working></Working>
       <Signin></Signin>
       <Footer></Footer>
     </div>

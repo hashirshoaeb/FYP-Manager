@@ -10,7 +10,7 @@ class Signin extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container my-5">
         <h1 className="display-3 text-center my-5"> Teacher or Student??</h1>
         <div className="row ">
           <div className="col-md-6">
