@@ -5,7 +5,8 @@ dotenv.config({ path: `${__dirname}/config.env` });
 mongoose
   .connect(process.env.CONNECTION_STRING, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex: true
   })
   .then(value => {
     // console.log('CONNECTION SUCCESSFUL', value.connections);

@@ -1,10 +1,19 @@
-const fs = require('fs');
 const Tour = require(`${__dirname}/../modals/tourModal`);
 
 exports.getAllTours = (req, res) => {
-  res.status(200).json({
-    status: 'success'
-  });
+  Tour.find()
+    .then(value => {
+      res.status(200).json({
+        status: 'success',
+        data: value
+      });
+    })
+    .catch(reason => {
+      res.status(404).json({
+        status: 'error',
+        data: reason
+      });
+    });
 };
 
 exports.getTour = (req, res) => {
@@ -14,10 +23,21 @@ exports.getTour = (req, res) => {
 };
 
 exports.createTour = (req, res) => {
-  res.status(201).json({
-    status: 'success',
-    data: newtour
-  });
+  const newTour = new Tour(req.body);
+  newTour
+    .save()
+    .then(value => {
+      res.status(201).json({
+        status: 'success',
+        data: value
+      });
+    })
+    .catch(reason => {
+      res.status(404).json({
+        status: 'error',
+        data: reason
+      });
+    });
 };
 
 exports.updateTour = (req, res) => {
