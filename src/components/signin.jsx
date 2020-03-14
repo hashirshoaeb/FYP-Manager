@@ -23,7 +23,7 @@ class Signin extends Component {
                     <input
                       type="text"
                       className="form-control "
-                      placeholder="etc. Khizar"
+                      placeholder="John Doe"
                     ></input>
                   </div>
                   <div className="form-group">
@@ -31,7 +31,7 @@ class Signin extends Component {
                     <input
                       type="email"
                       className="form-control "
-                      placeholder="Email@com.com"
+                      placeholder="name@example.com"
                     ></input>
                   </div>
                   <div className="form-group">
@@ -59,7 +59,7 @@ class Signin extends Component {
                     <input
                       type="text"
                       className="form-control "
-                      placeholder="etc. Khizar"
+                      placeholder="John Doe"
                     ></input>
                   </div>
                   <div className="form-group">
@@ -67,7 +67,7 @@ class Signin extends Component {
                     <input
                       type="email"
                       className="form-control "
-                      placeholder="Email@com.com"
+                      placeholder="name@example.com"
                     ></input>
                   </div>
                   <div className="form-group">
