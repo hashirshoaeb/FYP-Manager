@@ -12,7 +12,7 @@ class Project extends Component {
 
   render() {
     return (
-      <div className="jumbotron">  
+      <div className="jumbotron my-5">  
         <div className="container-fluid">
           <h1 className="display-4 text-center">
             {" "}

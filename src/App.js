@@ -7,11 +7,13 @@ import Project from "./components/Project";
 import Signin from "./components/Signin";
 import Working from "./components/Working";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 function App() {
   return (
     <div>
-      <MainBody></MainBody>    
+      <MainBody></MainBody>  
+      <About></About>  
       <Project></Project>    
       <Working></Working>
       <Signin></Signin>
