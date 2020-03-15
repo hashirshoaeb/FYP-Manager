@@ -26,6 +26,12 @@ FYP-Manager is a web application that allow students to work together and manage
 - There will be an "issues" tab, where students and teachers can discuss issue,
 - Anyone can raise issue.
 
+Who can add and set milestones?
+Who can schedule meetings?
+Project progress?
+Evaluation process?
+Notifications?
+
 ## what Platform/Dependencies should I use?
 
 - Bootstrap / material UI
