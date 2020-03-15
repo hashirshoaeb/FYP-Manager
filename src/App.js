@@ -18,7 +18,7 @@ function App() {
       <About></About>
       <Project></Project>
       <Working></Working>
-      <Signin></Signin>
+      <Signin></Signin> 
       <Footer></Footer>
     </div>
   );

@@ -18,7 +18,9 @@
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "react-items-carousel": "^2.8.0",
+   
   },
   "scripts": {
     "start": "react-scripts start",
