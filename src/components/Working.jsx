@@ -10,7 +10,7 @@ class Working extends Component {
   }
   render() {
     return (
-      <div className="container my-5">
+      <div id="working" className="container my-5">
         <div className="row">
           <div className="col-md-6 text-center">
             <h1 className="display-4 my-5">Step 1</h1>

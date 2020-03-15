@@ -8,7 +8,7 @@ class About extends Component {
   }
   render() {
     return (
-      <div className="container my-5">
+      <div id="about" className="container my-5">
         <div className="row">
           <div className="col-md-7">
             <h1 className="display-4 my-5">About FYP Manager</h1>

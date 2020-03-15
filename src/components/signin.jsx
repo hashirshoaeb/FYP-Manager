@@ -14,7 +14,7 @@ class Signin extends Component {
           <div className="col-md-6">
             <div className="card shadow-lg p-3 mb-5 bg-white rounded">
               <div className="card-body">
-                <h5 className="card-title">SignIn as Teacher</h5>
+                <h5 className="card-title">Sign in as Teacher</h5>
                 <form>
                   <div className="form-group">
                     <label for="expameleforname">Name:</label>
@@ -41,7 +41,7 @@ class Signin extends Component {
                     ></input>
                   </div>
                   <br></br>
-                  <button className="btn btn-dark btn-lg"> Signin </button>
+                  <button className="btn btn-dark btn-lg"> Sign in </button>
                 </form>
               </div>
             </div>
@@ -50,7 +50,7 @@ class Signin extends Component {
           <div className="col-md-6">
             <div className="card shadow-lg p-3 mb-5 bg-white rounded">
               <div className="card-body">
-                <h5 className="card-title">SignIn as Student</h5>
+                <h5 className="card-title">Sign in as Student</h5>
                 <form>
                   <div className="form-group">
                     <label for="expameleforname">Name:</label>
@@ -77,7 +77,7 @@ class Signin extends Component {
                     ></input>
                   </div>
                   <br></br>
-                  <button className="btn btn-dark btn-lg"> Signin </button>
+                  <button className="btn btn-dark btn-lg"> Sign in </button>
                 </form>
               </div>
             </div>

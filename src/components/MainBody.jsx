@@ -7,7 +7,7 @@ class MainBody extends Component {
   }
   render() {
     return (
-      <div className="container-fluid bg-dark">
+      <div id="mainbody" className="container-fluid bg-dark">
         <div className="container-fluid d-flex flex-column justify-content-center text-center text-light vh-100">
           <h1 className="display-2 my-4">FYP Manager</h1>
           <p className="lead">
