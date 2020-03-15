@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/FYP-Manager/static/js/main.16149e44.chunk.js",
+    "main.js.map": "/FYP-Manager/static/js/main.16149e44.chunk.js.map",
+    "runtime-main.js": "/FYP-Manager/static/js/runtime-main.d28d70ad.js",
+    "runtime-main.js.map": "/FYP-Manager/static/js/runtime-main.d28d70ad.js.map",
+    "static/css/2.3db4eb7d.chunk.css": "/FYP-Manager/static/css/2.3db4eb7d.chunk.css",
+    "static/js/2.908f5933.chunk.js": "/FYP-Manager/static/js/2.908f5933.chunk.js",
+    "static/js/2.908f5933.chunk.js.map": "/FYP-Manager/static/js/2.908f5933.chunk.js.map",
+    "index.html": "/FYP-Manager/index.html",
+    "precache-manifest.9ebafdb9a0ab3a0e10043a33664db23d.js": "/FYP-Manager/precache-manifest.9ebafdb9a0ab3a0e10043a33664db23d.js",
+    "service-worker.js": "/FYP-Manager/service-worker.js",
+    "static/css/2.3db4eb7d.chunk.css.map": "/FYP-Manager/static/css/2.3db4eb7d.chunk.css.map",
+    "static/js/2.908f5933.chunk.js.LICENSE.txt": "/FYP-Manager/static/js/2.908f5933.chunk.js.LICENSE.txt",
+    "static/media/collaboration.svg": "/FYP-Manager/static/media/collaboration.b11f6a82.svg",
+    "static/media/process.svg": "/FYP-Manager/static/media/process.8f5fa3ff.svg",
+    "static/media/scrum_board.svg": "/FYP-Manager/static/media/scrum_board.8402044c.svg",
+    "static/media/version_control.svg": "/FYP-Manager/static/media/version_control.2e353da7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d28d70ad.js",
+    "static/css/2.3db4eb7d.chunk.css",
+    "static/js/2.908f5933.chunk.js",
+    "static/js/main.16149e44.chunk.js"
+  ]
+}
