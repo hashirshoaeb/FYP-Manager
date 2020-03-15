@@ -12,11 +12,12 @@ import About from "./components/About";
 function App() {
   return (
     <div>
-      <MainBody></MainBody>  
-      <About></About>  
-      <Project></Project>    
+      <MainBody></MainBody>
+      <About></About>
+      {<Project></Project>}
       <Working></Working>
       <Signin></Signin>
+
       <Footer></Footer>
     </div>
   );

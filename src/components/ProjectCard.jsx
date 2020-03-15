@@ -10,7 +10,7 @@ class ProjectCard extends Component {
 
   render() {
     return (
-      <div className="card shadow col-4 my-5">
+      <div className="card shadow my-5 mx-5">
         <div className="card-body p-4">
           <h4 className="card-title">{this.state.data.Fyp_title}</h4>
           <hr />
