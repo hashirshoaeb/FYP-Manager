@@ -27,30 +27,30 @@
     {
       "id": "04",
       "Fyp_title": "Smart Contracts for Agreements Management",
-      "Supervisor": "Dr shoaeb Ahmad",
+      "Supervisor": "Aimal Khan",
       "Fyp_desc": "This was an Abbasi's Project in 5th semester and aimal khan was so excited to see and show his desire of making his own home automated",
       "Fyp_tag": ["Matlab", "c++", "Microcontroller"]
     },
     {
       "id": "05",
-      "Fyp_title": "Fyp manager",
-      "Supervisor": "Aimal Khan",
-      "Fyp_desc": "This was an Abbasi's Project in 5th semester and aimal khan was so excited to see and show his desire of making his own home automated",
-      "Fyp_tag": ["Matlab", "c++", "Microcontroller"]
+      "Fyp_title": "IoT base real time safty precaution system",
+      "Supervisor": "Dr. Shoaeb Ahamad Khan",
+      "Fyp_desc": "The project is used to scure more our equipments and bulding by giving predicted values..",
+      "Fyp_tag": ["Fuzzy Logic", "Web App", "Camera crossing", "IOT node"]
     },
     {
       "id": "06",
-      "Fyp_title": "Fyp manager",
-      "Supervisor": "Aimal Khan",
-      "Fyp_desc": "This was an Abbasi's Project in 5th semester and aimal khan was so excited to see and show his desire of making his own home automated",
-      "Fyp_tag": ["Matlab", "c++", "Microcontroller"]
+      "Fyp_title": "Football Player real time Robot using advanced physics",
+      "Supervisor": "Dr. Yasir Papa ",
+      "Fyp_desc": "The projecct consist of robot team which can play football using artifical common sense",
+      "Fyp_tag": ["Physics", "BOT Designing", "Artifical Intelligence"]
     },
     {
       "id": "07",
-      "Fyp_title": "Home Automation",
-      "Supervisor": "Aimal Khan",
-      "Fyp_desc": "This was an Abbasi's Project in 5th semester and aimal khan was so excited to see and show his desire of making his own home automated",
-      "Fyp_tag": ["Matlab", "c++", "Microcontroller"]
+      "Fyp_title": "Real time Visual effects in game development",
+      "Supervisor": "Qasir ch",
+      "Fyp_desc": "Project basically 3d mosture of visual effects in game development and game playing pata nahi kya",
+      "Fyp_tag": ["Aurduino", "C#", "Unreal Engine"]
     }
   ]
 }
