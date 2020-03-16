@@ -5,27 +5,48 @@
   "Fyp": [
     {
       "id": "01",
+      "Fyp_title": "Sensors and Monitoring App - IoT",
+      "Supervisor": "Aimal Khan",
+      "Fyp_desc": "I have a warehouse, kilometers away from my sale point and home. Second warehouse is in another city .... ",
+      "Fyp_tag": ["Web tool", "Android studio", "Networking"]
+    },
+    {
+      "id": "02",
+      "Fyp_title": "Computational Thinking Game for 3-5 Yrs Kids",
+      "Supervisor": "Qasir Chaudry",
+      "Fyp_desc": "if we could help very young Pakistani kids to computationally think using very enjoying and cartoon-oriented  ...",
+      "Fyp_tag": ["Programming", "c++", "Libarary"]
+    },
+    {
+      "id": "03",
+      "Fyp_title": "Blockchain as a Service",
+      "Supervisor": "Dr. Usman Akaram",
+      "Fyp_desc": "It would help you to understand how different algorithms work that powers the blockchain technology..  ",
+      "Fyp_tag": ["BlockChain", "c++", "Visual Studio"]
+    },
+    {
+      "id": "04",
+      "Fyp_title": "Smart Contracts for Agreements Management",
+      "Supervisor": "Dr shoaeb Ahmad",
+      "Fyp_desc": "This was an Abbasi's Project in 5th semester and aimal khan was so excited to see and show his desire of making his own home automated",
+      "Fyp_tag": ["Matlab", "c++", "Microcontroller"]
+    },
+    {
+      "id": "05",
       "Fyp_title": "Fyp manager",
       "Supervisor": "Aimal Khan",
       "Fyp_desc": "This was an Abbasi's Project in 5th semester and aimal khan was so excited to see and show his desire of making his own home automated",
       "Fyp_tag": ["Matlab", "c++", "Microcontroller"]
     },
     {
-      "id": "02",
-      "Fyp_title": "Home Automation",
+      "id": "06",
+      "Fyp_title": "Fyp manager",
       "Supervisor": "Aimal Khan",
       "Fyp_desc": "This was an Abbasi's Project in 5th semester and aimal khan was so excited to see and show his desire of making his own home automated",
       "Fyp_tag": ["Matlab", "c++", "Microcontroller"]
     },
     {
-      "id": "03",
-      "Fyp_title": "Home Automation",
-      "Supervisor": "Aimal Khan",
-      "Fyp_desc": "This was an Abbasi's Project in 5th semester and aimal khan was so excited to see and show his desire of making his own home automated",
-      "Fyp_tag": ["Matlab", "c++", "Microcontroller"]
-    },
-    {
-      "id": "04",
+      "id": "07",
       "Fyp_title": "Home Automation",
       "Supervisor": "Aimal Khan",
       "Fyp_desc": "This was an Abbasi's Project in 5th semester and aimal khan was so excited to see and show his desire of making his own home automated",
