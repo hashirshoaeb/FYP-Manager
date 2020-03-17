@@ -17,7 +17,7 @@ class Signin extends Component {
                 <h5 className="card-title">Sign in as Teacher</h5>
                 <form>
                   <div className="form-group">
-                    <label for="expameleforname">Name:</label>
+                    <label >Name:</label>
                     <input
                       type="text"
                       className="form-control "
@@ -25,7 +25,7 @@ class Signin extends Component {
                     ></input>
                   </div>
                   <div className="form-group">
-                    <label for="exampleforemail">Email:</label>
+                    <label>Email:</label>
                     <input
                       type="email"
                       className="form-control "
@@ -33,7 +33,7 @@ class Signin extends Component {
                     ></input>
                   </div>
                   <div className="form-group">
-                    <label for="expameleforPassword">Password:</label>
+                    <label>Password:</label>
                     <input
                       type="password"
                       className="form-control "
@@ -53,7 +53,7 @@ class Signin extends Component {
                 <h5 className="card-title">Sign in as Student</h5>
                 <form>
                   <div className="form-group">
-                    <label for="expameleforname">Name:</label>
+                    <label>Name:</label>
                     <input
                       type="text"
                       className="form-control "
@@ -61,7 +61,7 @@ class Signin extends Component {
                     ></input>
                   </div>
                   <div className="form-group">
-                    <label for="exampleforemail">Email:</label>
+                    <label>Email:</label>
                     <input
                       type="email"
                       className="form-control "
@@ -69,7 +69,7 @@ class Signin extends Component {
                     ></input>
                   </div>
                   <div className="form-group">
-                    <label for="expameleforPassword">Password:</label>
+                    <label>Password:</label>
                     <input
                       type="password"
                       className="form-control "

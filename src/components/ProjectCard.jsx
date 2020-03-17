@@ -16,10 +16,10 @@ class ProjectCard extends Component {
           <hr />
           <p className="lead">
             <b>Supervisor: </b>{" "}
-            <div className="btn btn-outline-dark">
+            <span className="btn btn-outline-dark">
               {" "}
               {this.state.data.Supervisor}
-            </div>
+            </span>
           </p>
           <h5 className="">Desctiption:</h5>
           <p className="card-text">{this.state.data.Fyp_desc}</p>

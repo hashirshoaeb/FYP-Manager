@@ -14,8 +14,8 @@ export default () => {
         <div className="row">
           {state.data.map(d => (
             d.id <= numberOfCards &&
-            <div className="col-md-4">
-              <ProjectCard key={d.id} data={d}>
+            <div key={d.id} className="col-md-4">
+              <ProjectCard data={d}>
                 {" "}
               </ProjectCard>
             </div>
