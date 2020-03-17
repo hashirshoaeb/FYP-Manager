@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { BrowserRouter, Route } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 // import Login from "./components/Login";
@@ -9,18 +10,30 @@ import Signin from "./components/Signin";
 import Working from "./components/Working";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import ProjectShow from "./components/ProjectShow"
 
-function App() {
+const Home = () => {
   return (
-    <div>
-      <Navbar></Navbar>
+    <Fragment>
       <MainBody></MainBody>
       <About></About>
       <Project></Project>
       <Working></Working>
-      <Signin></Signin> 
+      <Signin></Signin>
       <Footer></Footer>
-    </div>
+    </Fragment>
+  )
+};
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div>
+        <Navbar></Navbar>
+        <Route path="/" exact component={Home} />
+        <Route path="/projects" component={ProjectShow} />
+      </div>
+    </BrowserRouter>
   );
 }
 

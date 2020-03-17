@@ -11,6 +11,7 @@ class Working extends Component {
   render() {
     return (
       <div id="working" className="container my-5">
+        <h1 className="display-4 text-center my-5">How It Works</h1>
         <div className="row">
           <div className="col-md-6 text-center">
             <h1 className="display-4 my-5">Step 1</h1>
