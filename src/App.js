@@ -32,6 +32,7 @@ function App() {
         <Navbar></Navbar>
         <Route path="/" exact component={Home} />
         <Route path="/projects" component={ProjectShow} />
+        <Route path="/Read_Detail" component={ReadProject} />
       </div>
     </BrowserRouter>
   );
