@@ -49,13 +49,45 @@ So what is does is:
 
 ## How to start
 
-See [package.json]() for dependencies.
-Use following command to start
+The setup instructions assume that you're using [Git Bash](https://git-scm.com/), but the concepts are the same if you're using [Git GUI](https://git-scm.com/downloads/guis) or another version control software.
 
-```bash
-npm install
-npm start
-```
+1. To begin, fork the current ["FYP-Manager project repository"](https://github.com/hashirshoaeb/FYP-Manager/) on GitHub.
+
+2. Clone the repository of your fork. Launch Git Bash, and use the following command. Replace `<your-username>` with your GitHub user name:
+
+   ```sh
+   git clone https://github.com/<your-username>/FYP-Manager.git
+   ```
+
+3. Move into the `FYP-Manager` directory with the following command:
+
+   ```sh
+   cd FYP-Manager
+   ```
+
+4. Assign the forked repository to a remote called "origin".
+
+   ```sh
+   git remote add origin git://github.com/<your-username>/FYP-Manager.git
+   ```
+
+5. Assign the original repository to a remote called "upstream".
+
+   ```sh
+   git remote add upstream https://github.com/hashirshoaeb/FYP-Manager.git
+   ```
+
+6. Install [frontend packages](#) with npm:
+
+   ```sh
+   npm install
+   ```
+
+7. Start dev server
+
+   ```sh
+   npm start
+   ```
 
 ## Code directory structure
 
