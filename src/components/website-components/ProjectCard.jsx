@@ -12,7 +12,9 @@ class ProjectCard extends Component {
     return (
       <div style={{ borderRadius: "20px" }} className="card shadow my-5">
         <div className="card-body p-4">
-          <h5 className="card-title text-center">{this.state.data.Fyp_title}</h5>
+          <h5 className="card-title text-center">
+            {this.state.data.Fyp_title}
+          </h5>
           <hr />
           <p className="lead">
             <b>Supervisor: </b>{" "}
@@ -25,8 +27,9 @@ class ProjectCard extends Component {
           <p className="card-text">{this.state.data.Fyp_desc}</p>
           <hr />
           <h5 className="h5">Tags:</h5>
+
           {this.state.data.Fyp_tag.map(t => (
-            <div key={t} className="btn btn-outline-dark  m-2">
+            <div key={t} className=" btn btn-outline-dark  m-2">
               {t}
             </div>
           ))}

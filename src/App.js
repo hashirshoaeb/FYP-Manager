@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { BrowserRouter, Route } from "react-router-dom"
+import { BrowserRouter, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 // import Login from "./components/Login";
@@ -10,8 +10,8 @@ import Signin from "./components/website-components/Signin";
 import Working from "./components/website-components/Working";
 import Footer from "./components/website-components/Footer";
 import About from "./components/website-components/About";
-import ProjectShow from "./components/website-components/ProjectShow"
-
+import ProjectShow from "./components/website-components/ProjectShow";
+import ReadProject from "./components/website-components/ReadProject";
 const Home = () => {
   return (
     <Fragment>
@@ -22,7 +22,7 @@ const Home = () => {
       <Signin></Signin>
       <Footer></Footer>
     </Fragment>
-  )
+  );
 };
 
 function App() {
