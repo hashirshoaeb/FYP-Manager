@@ -8,7 +8,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="/#mainbody">
+        <a className="navbar-brand" href={process.env.PUBLIC_URL + "/#mainbody"}>
           Navbar
         </a>
         <button
@@ -26,22 +26,22 @@ class Navbar extends Component {
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             <li className="nav-item active">
-              <a className="nav-link" href="/#mainbody">
+              <a className="nav-link" href={process.env.PUBLIC_URL + "/#mainbody"}>
                 Home <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#about">
+              <a className="nav-link" href={process.env.PUBLIC_URL + "/#about"}>
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#projects">
+              <a className="nav-link" href={process.env.PUBLIC_URL + "/#projects"}>
                 Projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/#working">
+              <a className="nav-link" href={process.env.PUBLIC_URL + "/#working"}>
                 Working
               </a>
             </li>
