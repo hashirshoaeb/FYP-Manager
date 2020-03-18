@@ -6,17 +6,19 @@ class ReadProject extends Component {
     super(props);
     this.state = { data: Data.Fyp };
   }
+
   render() {
     return (
       <div className="row">
         <div className="col-md-3 my-5 mx-2">
-          <h4 className="my-5"> All Projects</h4>
+          <h4 className="my-5 mx-2"> All Projects</h4>
           {this.state.data.map((d, i) => (
-            <div className="btn btn-outline   m-2" key={d}>
-              {d.Fyp_title}
+            <div className="btn btn-outline   m-2" key={i}>
+              <b> {i + 1}.</b> {d.Fyp_title}
             </div>
           ))}
         </div>
+
         <div className=" col-md-6 my-5 ">
           <div className="card jumbotron">
             <div className="display-2 my-5 text-center">Fyp Title</div>

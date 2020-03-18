@@ -16,7 +16,7 @@ export default () => {
             d =>
               d.id <= numberOfCards && (
                 <div key={d.id} className="col-md-4">
-                  <Link className="btn" to="/Read_Detail" data={d}>
+                  <Link className="btn" to="/Read_Detail">
                     <ProjectCard data={d}> </ProjectCard>
                   </Link>
                 </div>
