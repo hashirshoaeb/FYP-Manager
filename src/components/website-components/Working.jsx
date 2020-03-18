@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import img_collab from "../asserts/collaboration.svg";
-import img_scrum from "../asserts/scrum_board.svg";
-import img_version from "../asserts/version_control.svg";
+import img_collab from "../../asserts/collaboration.svg";
+import img_scrum from "../../asserts/scrum_board.svg";
+import img_version from "../../asserts/version_control.svg";
 
 class Working extends Component {
   constructor(props) {

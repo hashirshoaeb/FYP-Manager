@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import img_process from "../asserts/process.svg";
+import img_process from "../../asserts/process.svg";
 
 class About extends Component {
   constructor(props) {

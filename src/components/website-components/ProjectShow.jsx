@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Data from "../projects.json";
+import Data from "../../projects.json";
 import ProjectCard from "./ProjectCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";

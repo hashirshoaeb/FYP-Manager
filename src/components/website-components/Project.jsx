@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import Data from "../projects.json";
+import Data from "../../projects.json";
 import { Link } from "react-router-dom";
 
 export default () => {
