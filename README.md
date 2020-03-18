@@ -4,21 +4,7 @@ WE ARE DEVELOPING A PROJECT MANAGMENT SYSTEM FOR STUDENTS.
 
 ---
 
-## Table of Contents
-
-- [Description](#Description)
-- [Technology stack](#technology-stack)
-- [Dependencies](#Dependencies)
-- [Requirements](#Requirements)
-- [Contribution](#Contribution)
-  - [Getting involved](#getting-involved)
-  - [Issues](#Issues)
-  - [Credits and references](#credits-and-references)
-- [Open source licensing info](#open-source-licensing-info)
-
----
-
-### **Description**:
+## **Description**:
 
 FYP-Manager is a web application that allow students to work together and manage their project, progress and meetings with supervisor remotely.
 FYP-Manager aims to keep track of the project progess and milestone to be achieved timely, which is benificial for both parties (project supervisor and students). Usually teachers and professors have tough schedule. And they barely meet in their officies, FYP-Manager provides online platform, where supervisor can share any resource with the students who are doing his project anytime.
@@ -31,18 +17,11 @@ So what is does is:
 - [x] Maintain resources
 - [x] Let you focus on Goals and Milestones
 
-### **Technology stack**:
+**Technology stack**: | Bootstrap | Reactjs | Nodejs | MongoDB |
 
-- Bootstrap / material UI
-- Reactjs
-- Nodejs
-- MongoDB
+**Status**: Under development.
 
-### **Status**:
-
-Under development.
-
-### **Links to production or demo instances**
+**Links to production or demo instances**
 
 - [Landing Page]()
 - [Web App]()
@@ -51,16 +30,88 @@ Under development.
 
 ---
 
-## Dependencies
+## Table of Contents
 
-See [package.json]().
-Use following command to install dependencies
+- [Development Documentation](#development-documentation)
+  - [How to start](#how-to-start)
+  - [Code directory structure](#code-directory-structure)
+  - [Requirements summary](#requirements-summary)
+  - [Modules to work on](#modules-to-work-on)
+- [Contribution](#Contribution)
+  - [Getting involved](#getting-involved)
+  - [Issues](#Issues)
+  - [Credits and references](#credits-and-references)
+- [Open source licensing info](#open-source-licensing-info)
 
-```bash
-npm install
+---
+
+# Development Documentation
+
+## How to start
+
+The setup instructions assume that you're using [Git Bash](https://git-scm.com/), but the concepts are the same if you're using [Git GUI](https://git-scm.com/downloads/guis) or another version control software.
+
+1. To begin, fork the current ["FYP-Manager project repository"](https://github.com/hashirshoaeb/FYP-Manager/) on GitHub.
+
+2. Clone the repository of your fork. Launch Git Bash, and use the following command. Replace `<your-username>` with your GitHub user name:
+
+   ```sh
+   git clone https://github.com/<your-username>/FYP-Manager.git
+   ```
+
+3. Move into the `FYP-Manager` directory with the following command:
+
+   ```sh
+   cd FYP-Manager
+   ```
+
+4. Assign the forked repository to a remote called "origin".
+
+   ```sh
+   git remote add origin git://github.com/<your-username>/FYP-Manager.git
+   ```
+
+5. Assign the original repository to a remote called "upstream".
+
+   ```sh
+   git remote add upstream https://github.com/hashirshoaeb/FYP-Manager.git
+   ```
+
+6. Install [frontend packages](#) with npm:
+
+   ```sh
+   npm install
+   ```
+
+7. Start dev server
+
+   ```sh
+   npm start
+   ```
+
+## Code directory structure
+
+```bach
+    FYP-Manager/
+    |__ public/
+    |   |__ index.html
+    |__ src/
+    |   |__ asserts/
+    |   |       (images and stuff)
+    |   |__ components/
+    |   |   |__ website-components/
+    |   |   |       (components for website)
+    |   |   |__ webapp-componentes/
+    |   |   |       (components for web-app)
+    |   |__ App.css
+    |   |       (global css file)
+    |   |__ App.js
+    |   |       (main frontend component)
+    |   |__ index.js
+                (main starting point)
 ```
 
-## Requirements
+## Requirements summary
 
 - Entities
   - student (Team leader and members)
@@ -89,7 +140,41 @@ npm install
 - Evaluation process?
 - Notifications?
 
+## Modules to work on
+
+**Views:**
+
+- [x] Navigation bar
+- [x] MainBody
+- [x] About FYP Section
+- [x] Projects Section
+- [x] How it works section
+- [x] Sign in cards
+- [x] Sign up cards
+- [x] Footer note
+- [ ] Static website routing
+- [ ] Student profile
+- [ ] Teacher profile
+- [ ] Dashboard
+- [ ] Progress component
+- [ ] Timeline component
+- [ ] Rate stars component
+- [ ] Chat box component
+- [ ]
+
+**Models:**
+
+- [ ] Student data model
+- [ ] Teacher/Supervisor data model
+- [ ] Milestone data model
+- [ ] Timeline data Model
+- [ ] Project data model
+
+**Controllers:**
+
 # Contribution
+
+Project is under development. Contributors are most welcomed to join. Feel free to ask question.
 
 ## Getting involved
 
@@ -98,15 +183,14 @@ npm install
 3. Fix it
 4. Generate Pull Request
 
-Currently focussing on building a structure for frontend.
-
 ## Issues
 
-Project is under development. Contributors are most welcomed
+- [ ] Fix readme.md to standard formate
 
 ## Credits and references
 
 - [How to write Readme](https://github.com/cfpb/open-source-project-template/blob/master/README.md)
+- [React routing](https://reacttraining.com/react-router/web/guides/quick-start)
 
 ---
 
