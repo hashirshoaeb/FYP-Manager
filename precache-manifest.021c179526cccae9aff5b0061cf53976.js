@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd40a8941c7b19da04a7a5e10aba57d7",
+    "revision": "d8abe5950aea2cd2bafd83c8c4658c23",
     "url": "/FYP-Manager/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FYP-Manager/static/js/2.9ba303ba.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "72bee9a7022c087d8315",
-    "url": "/FYP-Manager/static/js/main.dc4aa433.chunk.js"
+    "revision": "118f85cef2a90b3532c9",
+    "url": "/FYP-Manager/static/js/main.22efd98c.chunk.js"
   },
   {
     "revision": "18f5ad9705f503668378",
