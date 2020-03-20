@@ -12,6 +12,7 @@ import Footer from "./components/website-components/Footer";
 import About from "./components/website-components/About";
 import ProjectShow from "./components/website-components/ProjectShow";
 import ReadProject from "./components/website-components/ReadProject";
+import UserProfile from "./components/webapp-components/UserProfile";
 
 const Home = () => {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/projects" exact component={ProjectShow} />
         <Route path="/projects/:id" component={ReadProject} />
+        <Route path="/profile" component={UserProfile} />
       </div>
     </BrowserRouter>
   );

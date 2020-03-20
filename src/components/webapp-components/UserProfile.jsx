@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import data from "../../projects.json";
-class User_profile extends Component {
+class UserProfile extends Component {
   constructor(props) {
     super(props);
     this.state = { data: data.Fyp };
@@ -73,4 +73,4 @@ class User_profile extends Component {
   }
 }
 
-export default User_profile;
+export default UserProfile;
