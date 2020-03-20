@@ -55,9 +55,9 @@ class ProjectShow extends Component {
             <small className="form-text text-muted">{this.state.result}</small>
           </div>
           <div className="row ">
-            {this.state.data.map(d => (
-              <div key={d.id} className="col-md-4 ">
-                <Link className="btn" to="/Read_Detail">
+            {this.state.data.map((d, i) => (
+              <div key={i} className="col-md-4 ">
+                <Link className="btn" to={`projects/${i}`}>
                   <ProjectCard data={d}> </ProjectCard>{" "}
                 </Link>
               </div>
