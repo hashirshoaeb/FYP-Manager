@@ -22,6 +22,7 @@ const Home = () => {
       <Working></Working>
       <Signin></Signin>
       <Footer></Footer>
+      <User_profile></User_profile>
     </Fragment>
   );
 };

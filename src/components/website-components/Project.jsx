@@ -13,10 +13,10 @@ export default () => {
         <h1 className="display-4 text-center"> Recent Projects</h1>{" "}
         <div className="row">
           {state.data.map(
-            d =>
+            (d, i) =>
               d.id <= numberOfCards && (
                 <div key={d.id} className="col-md-4">
-                  <Link className="btn" to="/Read_Detail">
+                  <Link className="btn" to={`projects/${i}`}>
                     <ProjectCard data={d}> </ProjectCard>
                   </Link>
                 </div>

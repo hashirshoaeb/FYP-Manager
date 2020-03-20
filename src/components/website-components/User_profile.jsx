@@ -7,55 +7,57 @@ class User_profile extends Component {
   }
   render() {
     return (
-      <div className="container">
-        <div className="col-md-3">
-          <div className="profile-sidebar">
-            <div className="profile-userpic">
+      <div className="row justify-content-center">
+        <div className="col-md-3  my-5">
+          <div className="card shadow">
+            <div className="card-body mx-auto">
               <img className="img-responsive" alt="" />
+
+              <div className="lead">
+                <div className="display-4 text-center ">khizar</div>
+                <div className="text-center">Developer</div>
+              </div>
+
+              <div className="my-3">
+                <button type="button" className="btn btn-success btn-sm mx-2">
+                  Follow
+                </button>
+                <button type="button" className="btn btn-danger btn-sm mx-2">
+                  {" "}
+                  Message
+                </button>
+              </div>
             </div>
 
-            <div className="profile-usertitle">
-              <div className="profile-usertitle-name">khizar</div>
-              <div className="profile-usertitle-job">Developer</div>
+            <div className="card-body text-center mx-1">
+              <table className="table table-hover">
+                <tbody>
+                  <tr>
+                    <td>
+                      {" "}
+                      <a href="/">Account Settings </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      {" "}
+                      <a href="/">Tasks </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      {" "}
+                      <a href="/">help </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-
-            <div className="profile-userbuttons">
-              <button type="button" className="btn btn-success btn-sm">
-                Follow
-              </button>
-              <button type="button" className="btn btn-danger btn-sm">
-                Message
-              </button>
-            </div>
-
-            <div className="profile-usermenu">
-              <ul className="nav">
-                <li className="active">
-                  <a href="/">
-                    <i className="glyphicon glyphicon-home"></i>
-                    Overview{" "}
-                  </a>
-                </li>
-                <li>
-                  <a href="/">
-                    <i className="glyphicon glyphicon-user"></i>
-                    Account Settings{" "}
-                  </a>
-                </li>
-                <li>
-                  <a href="/" target="_blank">
-                    <i className="glyphicon glyphicon-ok"></i>
-                    Tasks{" "}
-                  </a>
-                </li>
-                <li>
-                  <a href="/">
-                    <i className="glyphicon glyphicon-flag"></i>
-                    Help{" "}
-                  </a>
-                </li>
-              </ul>
-            </div>
+          </div>
+        </div>
+        <div className="col-md-6    my-5">
+          <div className="card shadow">
+            <div className="card-body mx-auto"></div>
           </div>
         </div>
       </div>
