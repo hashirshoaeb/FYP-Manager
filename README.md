@@ -6,7 +6,7 @@ WE ARE DEVELOPING A PROJECT MANAGMENT SYSTEM FOR STUDENTS.
 
 ## **Description**:
 
-FYP-Manager is a web application that allow students to work together and manage their project, progress and meetings with supervisor remotely.
+FYP-Manager is a web application that allows students to work together and manage their project, progress and meetings with supervisor remotely.
 FYP-Manager aims to keep track of the project progess and milestone to be achieved timely, which is benificial for both parties (project supervisor and students). Usually teachers and professors have tough schedule. And they barely meet in their officies, FYP-Manager provides online platform, where supervisor can share any resource with the students who are doing his project anytime.
 
 So what is does is:
@@ -168,7 +168,39 @@ The setup instructions assume that you're using [Git Bash](https://git-scm.com/)
 - [ ] Teacher/Supervisor data model
 - [ ] Milestone data model
 - [ ] Timeline data Model
+
+  ```json
+  {
+    "timeline": [
+      {
+        "id": "Type: Number",
+        "created_at": "Type: Date",
+        "updated_at": "Type: Date"
+      }
+    ]
+  }
+  ```
+
 - [ ] Project data model
+
+  ```json
+  {
+    "projects": [
+      {
+        "id": "Type: Number",
+        "created_at": "Type: Date",
+        "updated_at": "Type: Date",
+        "fyp_title": "Type: String",
+        "supervisor": "Type: String <Teacher Name who created the porject>",
+        "team_members": "Type: List <List of Students who's requests got accepted by supervisor>",
+        "fyp_desc": "Type: String <Description of Project",
+        "timeline": "Type: Object <to be updated later>",
+        "milestones": "Type: List <to be updated later>",
+        "fyp_tag": "Type: List [] <List of searchable lowercased words>"
+      }
+    ]
+  }
+  ```
 
 **Controllers:**
 
@@ -185,7 +217,8 @@ Project is under development. Contributors are most welcomed to join. Feel free 
 
 ## Issues
 
-- [ ] Fix readme.md to standard formate
+- [ ] Fix readme.md to standard format
+- [ ] Search functionality needs improvment
 
 ## Credits and references
 
@@ -220,3 +253,7 @@ Project is under development. Contributors are most welcomed to join. Feel free 
 ## Open source licensing info
 
 [LICENSE](LICENSE)
+
+```
+
+```
