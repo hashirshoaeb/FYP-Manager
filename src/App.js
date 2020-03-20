@@ -12,7 +12,7 @@ import Footer from "./components/website-components/Footer";
 import About from "./components/website-components/About";
 import ProjectShow from "./components/website-components/ProjectShow";
 import ReadProject from "./components/website-components/ReadProject";
-import User_profile from "./components/website-components/User_profile";
+
 const Home = () => {
   return (
     <Fragment>
@@ -22,7 +22,6 @@ const Home = () => {
       <Working></Working>
       <Signin></Signin>
       <Footer></Footer>
-      <User_profile></User_profile>
     </Fragment>
   );
 };

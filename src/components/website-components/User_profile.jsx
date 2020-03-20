@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-
+import data from "../../projects.json";
 class User_profile extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { data: data.Fyp };
   }
   render() {
     return (
@@ -15,7 +15,7 @@ class User_profile extends Component {
 
               <div className="lead">
                 <div className="display-4 text-center ">khizar</div>
-                <div className="text-center">Developer</div>
+                <div className="text-center">Supervisor</div>
               </div>
 
               <div className="my-3">
@@ -57,7 +57,15 @@ class User_profile extends Component {
         </div>
         <div className="col-md-6    my-5">
           <div className="card shadow">
-            <div className="card-body mx-auto"></div>
+            <div className="card-body mx-auto">
+              My All Projects
+              {this.state.data.map(d => (
+                <div className="card my-3 p-1">
+                  <h5 className="card_title">{d.Fyp_title}</h5>
+                  <div className="btn btn-outline-danger">Assign to Umar</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
