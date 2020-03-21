@@ -36,6 +36,7 @@ function App() {
         <Route path="/projects" exact component={ProjectShow} />
         <Route path="/projects/:id" component={ReadProject} />
         <Route path="/profile" component={UserProfile} />
+        <Route path="/Signin" component={Signin} />
       </div>
     </BrowserRouter>
   );
