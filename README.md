@@ -160,24 +160,111 @@ The setup instructions assume that you're using [Git Bash](https://git-scm.com/)
 - [ ] Timeline component
 - [ ] Rate stars component
 - [ ] Chat box component
-- [ ]
+
+User
+![Site preview](./READMEdocs/user_p.png)
+![Site preview](./READMEdocs/user_n.png)
+![Site preview](./READMEdocs/user_r.png)
+
+Search Project
+![Site preview](./READMEdocs/searchProject.png)
+
+Project (start project)
+![Site preview](./READMEdocs/project_o.png)
+![Site preview](./READMEdocs/project_o1.png)
+![Site preview](./READMEdocs/project_t.png)
+![Site preview](./READMEdocs/project_s.png)
 
 **Models:**
 
-- [ ] Student data model
-- [ ] Teacher/Supervisor data model
-- [ ] Milestone data model
-- [ ] Timeline data Model
+- [ ] User data model
 
   ```json
   {
-    "timeline": [
-      {
-        "id": "Type: Number",
-        "created_at": "Type: Date",
-        "updated_at": "Type: Date"
-      }
-    ]
+    "user": {
+      "id": "Type: Number",
+      "created_at": "Type: Date",
+      "name": "",
+      "bio": "",
+      "qualification": "",
+      "category": "",
+      "notifications": "virtual",
+      "requests": "virtual"
+    }
+  }
+  ```
+
+* [ ] Requests data model
+
+  ```json
+  {
+    "request": {
+      "id": "Type: Number",
+      "created_at": "Type: Date",
+      "from": "sender_id",
+      "to": "receiver_id",
+      "for": "project_id",
+      "status": "accepted, rejected, pending"
+    }
+  }
+  ```
+
+- [ ] Notifications data model
+
+  ```json
+  {
+    "notification": {
+      "id": "Type: Number",
+      "created_at": "Type: Date",
+      "link": "",
+      "description": "",
+      "user_id": "for user"
+    }
+  }
+  ```
+
+* [ ] Milestone data model
+
+  ```json
+  {
+    "milestone": {
+      "id": "Type: Number",
+      "created_at": "Type: Date",
+      "start_day": "",
+      "end_day": "",
+      "total_days": "end_day - start_day",
+      "title": "",
+      "description": "",
+      "is_achieved": "false default",
+      "rating": " ",
+      "project_id": "for project"
+    }
+  }
+  ```
+
+- [ ] Conversation data model
+
+  ```json
+  {
+    "thread": {
+      "id": "Type: Number",
+      "created_at": "Type: Date",
+      "project_id": "for project",
+      "message": "",
+      "user_id": "from user"
+    }
+  }
+  ```
+
+  ```json
+  {
+    "reply": {
+      "id": "Type: Number",
+      "created_at": "Type: Date",
+      "thread_id": "for thread",
+      "message": "",
+      "user_id": "from user"
+    }
   }
   ```
 
@@ -185,20 +272,20 @@ The setup instructions assume that you're using [Git Bash](https://git-scm.com/)
 
   ```json
   {
-    "projects": [
-      {
-        "id": "Type: Number",
-        "created_at": "Type: Date",
-        "updated_at": "Type: Date",
-        "fyp_title": "Type: String",
-        "supervisor": "Type: String <Teacher Name who created the porject>",
-        "team_members": "Type: List <List of Students who's requests got accepted by supervisor>",
-        "fyp_desc": "Type: String <Description of Project",
-        "timeline": "Type: Object <to be updated later>",
-        "milestones": "Type: List <to be updated later>",
-        "fyp_tag": "Type: List [] <List of searchable lowercased words>"
-      }
-    ]
+    "project": {
+      "id": "Type: Number",
+      "created_at": "Type: Date",
+      "starting_date": "Type: Date. from this date progress will be started calculating",
+      "title": "Type: String",
+      "description": "",
+      "link": "",
+      "tags": "",
+      "milestones": "virtual",
+      "user_id": "owner of project",
+      "team": "id's of collaborators",
+      "threads": "virtual",
+      "progress": "calculation from milestones"
+    }
   }
   ```
 
