@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import data from "../../projects.json";
 import { Link } from "react-router-dom";
-
+import userData from "../../UserProfile.json";
 class UserProfile extends Component {
   constructor(props) {
     super(props);
-    this.state = { data: data.Fyp, val: "proj" };
+    this.state = { data: data.Fyp, val: "proj", Udata: userData.User };
     this.click = this.click.bind(this);
     this.click1 = this.click1.bind(this);
     this.click2 = this.click2.bind(this);
@@ -50,17 +50,19 @@ class UserProfile extends Component {
       </div>
     ) : val === "req" ? (
       <div>
-        <div className="btn btn-success btn-sm mx-5   ">clear all</div>
+        <div className="my-4"></div>
+        <div className="btn btn-primary btn-sm mx-5   ">Mark All read</div>
+        <div className="btn btn-success btn-sm    ">clear all</div>
 
         <table className="table table-hover">
           {" "}
           <tbody>
             {this.state.data.map((d, i) => (
               <Link to={`/projects/${i}`} key={i}>
-                <div
-                  style={{ borderRadius: "20px" }}
-                  className="card shadow my-5"
-                ></div>
+                <div className="card shadow ">
+                  <div className="">icon</div>
+                  <div className="display-5">Description</div>
+                </div>
               </Link>
             ))}
           </tbody>
@@ -72,16 +74,17 @@ class UserProfile extends Component {
         <tbody>
           {this.state.data.map((d, i) => (
             <Link to={`/projects/${i}`} key={i}>
-              <div
-                style={{ borderRadius: "20px" }}
-                className="card shadow my-5"
-              ></div>
+              <div className="card shadow my-1">
+                {" "}
+                <div className="">icon</div>
+                <div className="display-5">Description</div>
+              </div>
             </Link>
           ))}
         </tbody>
       </table>
     ) : (
-      (this.state.val = "proj")
+      (this.setstate.val = "proj")
     );
   }
   click() {
@@ -131,7 +134,7 @@ class UserProfile extends Component {
 class ProfileCard extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { data: userData.User };
   }
   render() {
     return (
@@ -140,7 +143,7 @@ class ProfileCard extends Component {
           <div className="card-body mx-auto">
             <img src="..." alt="..." class="rounded-circle" />
             <div className="lead">
-              <div className="display-4 text-center ">khizar</div>
+              <div className="display-4 text-center ">{data.Name}</div>
               <div className="text-center">Catagories</div>
             </div>
             <div className="my-3">
