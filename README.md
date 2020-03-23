@@ -340,7 +340,3 @@ Project is under development. Contributors are most welcomed to join. Feel free 
 ## Open source licensing info
 
 [LICENSE](LICENSE)
-
-```
-
-```
