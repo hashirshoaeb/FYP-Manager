@@ -10,9 +10,9 @@ class Navbar extends Component {
 
   renderTags(IsLogin) {
     return IsLogin ? (
-      <div class="dropdown">
+      <div className="dropdown">
         <button
-          class="btn btn-outline-dark dropdown-toggle my-2 my-sm-0 "
+          className="btn btn-outline-dark dropdown-toggle my-2 my-sm-0 "
           type="profile"
           id="dropdownMenu2"
           data-toggle="dropdown"
@@ -21,14 +21,14 @@ class Navbar extends Component {
         >
           Profile
         </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <button class="dropdown-item" type="button">
+        <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button className="dropdown-item" type="button">
             <Link to={`/profile`}>profile</Link>
           </button>
-          <button class="dropdown-item" type="button">
+          <button className="dropdown-item" type="button">
             Settings
           </button>
-          <button class="dropdown-item" type="button">
+          <button className="dropdown-item" type="button">
             Help
           </button>
         </div>
