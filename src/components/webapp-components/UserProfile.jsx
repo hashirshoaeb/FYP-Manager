@@ -5,10 +5,34 @@ import userData from "../../UserProfile.json";
 class UserProfile extends Component {
   constructor(props) {
     super(props);
-    this.state = { data: data.Fyp, val: "proj", Udata: userData.User };
+    this.state = { data: data.Fyp, not: 1, val: "proj", Udata: userData.User };
     this.click = this.click.bind(this);
     this.click1 = this.click1.bind(this);
     this.click2 = this.click2.bind(this);
+    this.clear = this.clear.bind(this);
+  }
+
+  clear() {
+    this.setState({ not: 0 });
+  }
+  notification(not) {
+    return not === 0 ? (
+      <div>clear </div>
+    ) : (
+      <table className="table table-hover">
+        {" "}
+        <tbody>
+          {this.state.data.map((d, i) => (
+            <Link to={`/projects/${i}`} key={i}>
+              <div className="card shadow ">
+                <div className="">icon</div>
+                <div className="display-5">Description</div>
+              </div>
+            </Link>
+          ))}
+        </tbody>
+      </table>
+    );
   }
   // handleClick = val => {};
   handleClick(val) {
@@ -24,7 +48,7 @@ class UserProfile extends Component {
           <div className="card shadow-sm my-3">
             {" "}
             <div className="btn btn-outline-dark mx-auto rounded-circle ">
-              <b> - </b>
+              <b> Delete</b>
             </div>
             <div className="card-body p-4">
               {" "}
@@ -64,21 +88,11 @@ class UserProfile extends Component {
       <div>
         <div className="my-4"></div>
         <div className="btn btn-primary btn-sm mx-5   ">Mark All read</div>
-        <div className="btn btn-success btn-sm    ">clear all</div>
+        <div className="btn btn-success btn-sm " onClick={this.clear}>
+          clear all
+        </div>
 
-        <table className="table table-hover">
-          {" "}
-          <tbody>
-            {this.state.data.map((d, i) => (
-              <Link to={`/projects/${i}`} key={i}>
-                <div className="card shadow ">
-                  <div className="">icon</div>
-                  <div className="display-5">Description</div>
-                </div>
-              </Link>
-            ))}
-          </tbody>
-        </table>
+        {this.notification(this.state.not)}
       </div>
     ) : val === "prog" ? (
       <table className="table table-hover">

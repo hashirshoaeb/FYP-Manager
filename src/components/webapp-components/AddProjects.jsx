@@ -1,9 +1,16 @@
 import React, { Component } from "react";
-
+import data from "../../Fields.json";
 class AddProject extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { field: 1, data: data.fields };
+    this.add = this.add.bind(this);
+  }
+  add(f) {
+    this.setState({ field: 1 });
+  }
+  clear(f) {
+    return f === 0 ? <div>select field</div> : <div>{f}</div>;
   }
   render() {
     return (
@@ -34,15 +41,20 @@ class AddProject extends Component {
               Areas of Project
             </label>
             <select
-              className="custom-select my-1 mr-sm-2"
+              type="text"
+              className="custom-select my-1 "
               id="inlineFormCustomSelectPref"
             >
+              {" "}
               <option selected>Choose...</option>
-              <option value="1">Operating System</option>
-              <option value="2">Computer Sceiences</option>
-              <option value="3">Artifical intelligence</option>
-            </select>
-            <div className="btn btn-primary mx-4">Add</div>
+              {this.state.data.map((d, i) => (
+                <option value="1">{d}</option>
+              ))}{" "}
+            </select>{" "}
+            <div className="btn btn-primary mx-4" onClick={this.add}>
+              Add
+            </div>
+            {this.clear(this.state.field)}
           </div>
           <button type="submit" className="btn btn-primary mx-5 my-1">
             Submit

@@ -26,7 +26,7 @@ class Navbar extends Component {
             <Link to={`/profile`}>profile</Link>
           </button>
           <button className="dropdown-item" type="button">
-            Settings
+            <Link to={`/setting`}> Settings </Link>
           </button>
           <button className="dropdown-item" type="button">
             Help
