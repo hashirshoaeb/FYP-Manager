@@ -24,7 +24,29 @@ class GraphView extends Component {
     };
   }
   render() {
-    return <div className="container-fluid"></div>;
+    return (
+      <div className="container-fluid">
+        {/* <svg width="500" height="500">
+          <line
+            x1="10"
+            x2="100"
+            y1="50"
+            y2="50"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <rect x="10" y="0" width="10" height="10" transform=" " />
+          <path
+            d="M 5 75 Q 50 100 100 75 T 190 75"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-dasharray="5,10,5"
+            fill="none"
+          />
+        </svg> */}
+      </div>
+    );
   }
 }
 
