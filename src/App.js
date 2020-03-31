@@ -13,7 +13,9 @@ import About from "./components/website-components/About";
 import ProjectShow from "./components/website-components/ProjectShow";
 import ReadProject from "./components/website-components/ReadProject";
 import UserProfile from "./components/webapp-components/UserProfile";
-
+import AddProject from "./components/webapp-components/AddProjects";
+import UpdateProject from "./components/webapp-components/UpdateProject";
+import Setting from "./components/website-components/Setting";
 const Home = () => {
   return (
     <Fragment>
@@ -37,6 +39,9 @@ function App() {
         <Route path="/projects/:id" component={ReadProject} />
         <Route path="/profile" component={UserProfile} />
         <Route path="/Signin" component={Signin} />
+        <Route path="/AddProject" component={AddProject} />
+        <Route path="/update/:id" component={UpdateProject} />
+        <Route path="/setting" component={Setting} />
       </div>
     </BrowserRouter>
   );

@@ -8,14 +8,13 @@
       "Name": "Khizar",
       "created_at": "Type: Date",
       "email": "khizarrana756@gmail.com",
-      " catagory": "Student",
+      "catagory": "Student",
       "qualification": "BSCE",
       "notifications": "virtual",
       "requests": "virtual",
       "bio": "I am passionate student of NUST and a Good Learner of advance things",
       "Projects": [
         {
-          "id": "01",
           "Fyp_title": "Sensors and Monitoring App - IoT",
           "cat": "Supervisor",
           "Fyp_desc": "I have a warehouse, kilometers away from my sale point and home. Second warehouse is in another city .... ",
@@ -23,7 +22,6 @@
           "Fyp_tag": ["Web tool", "Android studio", "Networking"]
         },
         {
-          "id": "02",
           "Fyp_title": "Computational Thinking Game for 3-5 Yrs Kids",
           "cat": "team",
           "Fyp_desc": "if we could help very young Pakistani kids to computationally think using very enjoying and cartoon-oriented  ...",
@@ -45,7 +43,6 @@
       "Bio": "I am passionate student of NUST and a Good Learner of advance things",
       "Projects": [
         {
-          "id": "01",
           "Fyp_title": "Sensors and Monitoring App - IoT",
           "cat": "Supervisor",
           "Fyp_desc": "I have a warehouse, kilometers away from my sale point and home. Second warehouse is in another city .... ",
@@ -53,7 +50,6 @@
           "Fyp_tag": ["Web tool", "Android studio", "Networking"]
         },
         {
-          "id": "02",
           "Fyp_title": "Computational Thinking Game for 3-5 Yrs Kids",
           "cat": "team",
           "Fyp_desc": "if we could help very young Pakistani kids to computationally think using very enjoying and cartoon-oriented  ...",

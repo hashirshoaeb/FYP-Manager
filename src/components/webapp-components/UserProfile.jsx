@@ -5,24 +5,56 @@ import userData from "../../UserProfile.json";
 class UserProfile extends Component {
   constructor(props) {
     super(props);
-    this.state = { data: data.Fyp, val: "proj", Udata: userData.User };
+    this.state = { data: data.Fyp, not: 1, val: "proj", Udata: userData.User };
     this.click = this.click.bind(this);
     this.click1 = this.click1.bind(this);
     this.click2 = this.click2.bind(this);
+    this.clear = this.clear.bind(this);
+  }
+
+  clear() {
+    this.setState({ not: 0 });
+  }
+  notification(not) {
+    return not === 0 ? (
+      <div>clear </div>
+    ) : (
+      <table className="table table-hover">
+        {" "}
+        <tbody>
+          {this.state.data.map((d, i) => (
+            <Link to={`/projects/${i}`} key={i}>
+              <div className="card shadow ">
+                <div className="">icon</div>
+                <div className="display-5">Description</div>
+              </div>
+            </Link>
+          ))}
+        </tbody>
+      </table>
+    );
   }
   // handleClick = val => {};
   handleClick(val) {
     return val === "proj" ? (
       <div className="my-1 my-sm-0">
-        <div className="btn btn-success btn-sm mx-5 my-2  ">
-          Add New Project
-        </div>
+        <Link to={"/AddProject"}>
+          {" "}
+          <div className="btn btn-success btn-sm mx-5 my-2  ">
+            Add New Project
+          </div>
+        </Link>
         {this.state.data.map((d, i) => (
           <div className="card shadow-sm my-3">
+            {" "}
+            <div className="btn btn-outline-dark mx-auto rounded-circle ">
+              <b> Delete</b>
+            </div>
             <div className="card-body p-4">
+              {" "}
               <h5 className="card-title text-center">
                 {this.state.data[i].Fyp_title}
-              </h5>
+              </h5>{" "}
               <hr />
               <p className="lead">
                 <b>Supervisor: </b>{" "}
@@ -35,16 +67,20 @@ class UserProfile extends Component {
               <p className="card-text">{this.state.data[i].Fyp_desc}</p>
               <hr />
               <h5 className="h5">Tags:</h5>
-
               {this.state.data[i].Fyp_tag.map(t => (
                 <div key={t} className=" btn btn-outline-dark  m-2">
                   {t}
                 </div>
               ))}
             </div>
-            <Link to={`/projects/${i}`} key={i}>
-              <div className="btn btn-primary mx-5 my-1"> More</div>{" "}
-            </Link>
+            <div>
+              <Link to={`/projects/${i}`} key={i}>
+                <div className="btn btn-primary mx-5 my-1"> More</div>{" "}
+              </Link>
+              <Link to={`/update/${i}`} key={i}>
+                <div className="btn btn-primary mx-5 my-1"> Update</div>{" "}
+              </Link>
+            </div>
           </div>
         ))}{" "}
       </div>
@@ -52,21 +88,11 @@ class UserProfile extends Component {
       <div>
         <div className="my-4"></div>
         <div className="btn btn-primary btn-sm mx-5   ">Mark All read</div>
-        <div className="btn btn-success btn-sm    ">clear all</div>
+        <div className="btn btn-success btn-sm " onClick={this.clear}>
+          clear all
+        </div>
 
-        <table className="table table-hover">
-          {" "}
-          <tbody>
-            {this.state.data.map((d, i) => (
-              <Link to={`/projects/${i}`} key={i}>
-                <div className="card shadow ">
-                  <div className="">icon</div>
-                  <div className="display-5">Description</div>
-                </div>
-              </Link>
-            ))}
-          </tbody>
-        </table>
+        {this.notification(this.state.not)}
       </div>
     ) : val === "prog" ? (
       <table className="table table-hover">
@@ -101,7 +127,7 @@ class UserProfile extends Component {
     return (
       <div className="container">
         <div className="row">
-          <ProfileCard />
+          <ProfileCard data={this.state.Udata} />
           <div className="col-md-8 my-5 ">
             <ul class="nav nav-tabs">
               <li class="nav-item active">
@@ -134,17 +160,23 @@ class UserProfile extends Component {
 class ProfileCard extends Component {
   constructor(props) {
     super(props);
-    this.state = { data: userData.User };
+    this.state = {
+      data: userData.User,
+      Udata: userData.props
+    };
   }
   render() {
+    const { id } = "01";
     return (
       <div className="col-md-4  my-5">
         <div className="card shadow my-5">
           <div className="card-body mx-auto">
             <img src="..." alt="..." class="rounded-circle" />
             <div className="lead">
-              <div className="display-4 text-center ">{data.Name}</div>
-              <div className="text-center">Catagories</div>
+              <div className="display-4 text-center ">
+                {/* {this.state.Udata[id].Name} */}
+              </div>
+              <div className="text-center">catagories</div>
             </div>
             <div className="my-3">
               <button type="button" className="btn btn-success btn-sm mx-2">
@@ -159,10 +191,10 @@ class ProfileCard extends Component {
             <table className="table table-hover">
               <tbody>
                 <tr>
-                  <td> Qualification</td>
+                  <td> qualification</td>
                 </tr>
                 <tr>
-                  <td> Bio</td>
+                  <td> bios</td>
                 </tr>
               </tbody>
             </table>
