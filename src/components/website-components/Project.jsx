@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
-import Data from "../../projects.json";
+import { project } from "../../mock-model/projects";
 import { Link } from "react-router-dom";
 
-export default () => {
-  const state = { data: Data.Fyp };
+const Project = () => {
+  const [data, setData] = useState(project);
   const numberOfCards = 3;
   return (
     <div id="projects" className="jumbotron my-5">
@@ -12,12 +12,12 @@ export default () => {
         {" "}
         <h1 className="display-4 text-center"> Recent Projects</h1>{" "}
         <div className="row">
-          {state.data.map(
+          {data.map(
             (d, i) =>
               d.id <= numberOfCards && (
                 <div key={d.id} className="col-md-4">
                   <Link className="btn" to={`projects/${i}`}>
-                    <ProjectCard data={d}> </ProjectCard>
+                    <ProjectCard project={d}> </ProjectCard>
                   </Link>
                 </div>
               )
@@ -33,3 +33,5 @@ export default () => {
     </div>
   );
 };
+
+export default Project;

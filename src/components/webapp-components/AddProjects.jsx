@@ -1,68 +1,144 @@
-import React, { Component } from "react";
-import data from "../../Fields.json";
-class AddProject extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { field: 1, data: data.fields };
-    this.add = this.add.bind(this);
-  }
-  add(f) {
-    this.setState({ field: 1 });
-  }
-  clear(f) {
-    return f === 0 ? <div>select field</div> : <div>{f}</div>;
-  }
-  render() {
-    return (
-      <div className="container">
-        <div className="card shadow">
-          <div className="card-title text-center display-3">Add Projects</div>
-          <div className="card-body">
-            <label for="exampleInputEmail1">Tittle of Project</label>
-            <div>
-              {" "}
-              <textarea
-                className="form-control"
-                id="exampleFormControlTextarea1"
-                rows="1"
-              ></textarea>
-            </div>
-          </div>
-          <div className="card-body">
-            <label for="exampleInputEmail1">Description</label>
-            <textarea
-              className="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-          </div>
-          <div className="mx-3">
-            <label className="my-1 mr-2" for="inlineFormCustomSelectPref">
-              Areas of Project
-            </label>
-            <select
-              type="text"
-              className="custom-select my-1 "
-              id="inlineFormCustomSelectPref"
-            >
-              {" "}
-              <option selected>Choose...</option>
-              {this.state.data.map((d, i) => (
-                <option value="1">{d}</option>
-              ))}{" "}
-            </select>{" "}
-            <div className="btn btn-primary mx-4" onClick={this.add}>
-              Add
-            </div>
-            {this.clear(this.state.field)}
-          </div>
-          <button type="submit" className="btn btn-primary mx-5 my-1">
-            Submit
-          </button>
+import React, { useState, useEffect } from "react";
+
+const AddProject = props => {
+  // username from match.params
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const [detail, setDetail] = useState("");
+  const [link, setLink] = useState("");
+  const [tags, setTags] = useState([""]);
+  const [milestones, setmilestones] = useState("");
+
+  const handleSubmit = () => {
+    console.log({ title, description, detail, link, tags, milestones });
+  };
+
+  return (
+    <div className="container shadow-lg">
+      <div className="text-center"> Add Project</div>
+      <form>
+        <Text
+          label="Title"
+          value={title}
+          onChange={e => setTitle(e.target.value)}
+        />
+        <Text
+          label="Description"
+          value={description}
+          onChange={e => setDescription(e.target.value)}
+        />
+        <Text
+          label="Link"
+          value={link}
+          onChange={e => setLink(e.target.value)}
+        />
+        <InputTag value={tags} onChange={value => setTags(value)} />
+        <div className="form-group">
+          <label>Detail</label>
+          <textarea
+            className="form-control"
+            rows="11"
+            value={detail}
+            onChange={e => {
+              setDetail(e.target.value);
+            }}
+          ></textarea>
         </div>
-      </div>
-    );
-  }
-}
+        <button
+          type="submit"
+          className="btn btn-primary"
+          onClick={e => {
+            e.preventDefault();
+            handleSubmit();
+          }}
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  );
+};
+const Text = ({ label, value, onChange }) => {
+  return (
+    <div className="form-group">
+      <label>{label}</label>
+      <input
+        type="text"
+        className="form-control"
+        value={value}
+        onChange={e => {
+          onChange(e);
+        }}
+      />
+    </div>
+  );
+};
+
+const InputTag = ({ value, onChange }) => {
+  const handleChange = ({ e, index }) => {
+    const data = [...value];
+    data[index] = e.target.value;
+    onChange(data);
+  };
+
+  const handleAddClick = ({ e, index }) => {
+    const data = [...value];
+    data.push("");
+    onChange(data);
+  };
+
+  const handleRemoveClick = ({ e, index }) => {
+    const data = [...value];
+    data.splice(index, 1);
+    onChange(data);
+  };
+
+  return (
+    <div>
+      {value.map((value, index) => {
+        return (
+          <div key={index} className="form-group">
+            Tag
+            <input
+              type="text"
+              className="form-control"
+              value={value}
+              onChange={e => {
+                handleChange({ e, index });
+              }}
+            />
+            <button
+              className="btn btn-primary"
+              onClick={e => {
+                e.preventDefault();
+                handleAddClick({ e, index });
+              }}
+            >
+              Add
+            </button>
+            <button
+              className="btn btn-primary"
+              onClick={e => {
+                e.preventDefault();
+                handleRemoveClick({ e, index });
+              }}
+            >
+              Remove
+            </button>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+// Implement Later
+const InputMileStone = ({ value, onChange }) => {
+  return (
+    <div>
+      <div>{/*Later */}</div>
+    </div>
+  );
+};
 
 export default AddProject;

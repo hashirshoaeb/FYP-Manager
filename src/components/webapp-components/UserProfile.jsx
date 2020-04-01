@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import data from "../../projects.json";
+import { project } from "../../mock-model/projects";
 import { Link } from "react-router-dom";
-import userData from "../../UserProfile.json";
+import { user } from "../../mock-model/users";
 class UserProfile extends Component {
   constructor(props) {
     super(props);
-    this.state = { data: data.Fyp, not: 1, val: "proj", Udata: userData.User };
+    this.state = { data: project, not: 1, val: "proj", Udata: user };
     this.click = this.click.bind(this);
     this.click1 = this.click1.bind(this);
     this.click2 = this.click2.bind(this);
@@ -161,8 +161,8 @@ class ProfileCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: userData.User,
-      Udata: userData.props
+      data: user,
+      Udata: user
     };
   }
   render() {

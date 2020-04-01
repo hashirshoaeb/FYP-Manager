@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import data from "../../mock-model/milestones.json";
+import { milestone } from "../../mock-model/milestones";
 
 class Milestone extends Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class GraphView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      milestoneslist: data.milestone
+      milestoneslist: milestone
     };
   }
   render() {
@@ -54,7 +54,7 @@ class TextView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      milestoneslist: data.milestone
+      milestoneslist: milestone
     };
   }
   render() {

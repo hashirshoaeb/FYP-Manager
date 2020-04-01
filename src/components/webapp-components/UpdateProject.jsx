@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Data from "../../projects.json";
+import { project } from "../../mock-model/projects";
 class UpdateProject extends Component {
   constructor(props) {
     super(props);
-    this.state = { data: Data.Fyp, id: this.props.match.params.id };
+    this.state = { data: project, id: this.props.match.params.id };
   }
 
   render() {

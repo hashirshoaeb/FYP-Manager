@@ -39,12 +39,13 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/projects" exact component={ProjectShow} />
         <Route path="/projects/:id" component={ReadProject} />
-        <Route path="/profile" component={UserProfile} />
-        <Route path="/Signin" component={Signin} />
-        <Route path="/AddProject" component={AddProject} />
+        {/* Dymanic Stuff now */}
+        <Route path="/signin" component={Signin} />
+        <Route path="/new" component={AddProject} />
         <Route path="/update/:id" component={UpdateProject} />
         <Route path="/setting" component={Setting} />
         <Route path="/milestone" component={Milestone} />
+        {/* <Route path="/:username" component={UserProfile} /> */}
       </div>
     </BrowserRouter>
   );
