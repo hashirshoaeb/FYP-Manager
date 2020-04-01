@@ -184,6 +184,8 @@ Project (start project)
     "user": {
       "id": "Type: Number",
       "created_at": "Type: Date",
+      "email": "example@domain.com",
+      "password": "*******",
       "name": "",
       "bio": "",
       "qualification": "",
@@ -278,6 +280,7 @@ Project (start project)
       "starting_date": "Type: Date. from this date progress will be started calculating",
       "title": "Type: String",
       "description": "",
+      "detail": "readme.md",
       "link": "",
       "tags": "",
       "milestones": "virtual",
