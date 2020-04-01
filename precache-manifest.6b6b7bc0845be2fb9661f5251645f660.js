@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "269feac2b10e6ed963d652291566cb14",
+    "revision": "bb8ef2011b3c001f5572cbd7002da3c0",
     "url": "/FYP-Manager/index.html"
   },
   {
-    "revision": "5fad8e6ba368cea15151",
-    "url": "/FYP-Manager/static/css/2.3db4eb7d.chunk.css"
+    "revision": "225e414fd6a27e560912",
+    "url": "/FYP-Manager/static/css/2.2990c7a7.chunk.css"
   },
   {
-    "revision": "5fad8e6ba368cea15151",
-    "url": "/FYP-Manager/static/js/2.9ba303ba.chunk.js"
+    "revision": "225e414fd6a27e560912",
+    "url": "/FYP-Manager/static/js/2.f32e1fa8.chunk.js"
   },
   {
-    "revision": "a02c2e6156cb6e9e5c30be88d1ba3366",
-    "url": "/FYP-Manager/static/js/2.9ba303ba.chunk.js.LICENSE.txt"
+    "revision": "6e71b6ee5ea7775d33431df95d229f09",
+    "url": "/FYP-Manager/static/js/2.f32e1fa8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "46d456de0f630b20442f",
-    "url": "/FYP-Manager/static/js/main.c0ca4f53.chunk.js"
+    "revision": "58ecf5cb6706a99e0294",
+    "url": "/FYP-Manager/static/js/main.e947af1a.chunk.js"
   },
   {
-    "revision": "18f5ad9705f503668378",
-    "url": "/FYP-Manager/static/js/runtime-main.d28d70ad.js"
+    "revision": "78a648c7a6f52d1d5958",
+    "url": "/FYP-Manager/static/js/runtime-main.c34c4384.js"
   },
   {
     "revision": "b11f6a823db102782d232a685e93419a",
