@@ -45,7 +45,7 @@ function App() {
         <Route path="/update/:id" component={UpdateProject} />
         <Route path="/setting" component={Setting} />
         <Route path="/milestone" component={Milestone} />
-        {/* <Route path="/:username" component={UserProfile} /> */}
+        <Route path="/profile" component={UserProfile} />
       </div>
     </BrowserRouter>
   );
