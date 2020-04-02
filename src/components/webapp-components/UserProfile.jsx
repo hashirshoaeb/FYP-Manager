@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { project } from "../../mock-model/projects";
 import { Link } from "react-router-dom";
-import { user } from "../../mock-model/users";
 import queryString from "query-string";
-import image from "../../asserts/collaboration.svg";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import image from "../../asserts/collaboration.svg";
+import { project } from "../../mock-model/projects";
+import { user } from "../../mock-model/users";
+import { notification } from "../../mock-model/notifications";
 // import ProjectCard from "../website-components/ProjectCard";
 const UserProfile = ({ location, match }) => {
   const { tab } = queryString.parse(location.search);
 
-  console.log(tab);
   return (
     <div className="container-xl">
       <div className="row">
@@ -20,17 +20,20 @@ const UserProfile = ({ location, match }) => {
         <div className="col-lg-8 my-3">
           <ul className="nav nav-tabs">
             <li className="nav-item">
-              <Link className="nav-link" to={`profile?tab=projects`}>
+              <Link className="nav-link text-dark" to={`profile?tab=projects`}>
                 Projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to={`profile?tab=notifications`}>
+              <Link
+                className="nav-link text-dark"
+                to={`profile?tab=notifications`}
+              >
                 Notifications
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to={`profile?tab=requests`}>
+              <Link className="nav-link text-dark" to={`profile?tab=requests`}>
                 Requests
               </Link>
             </li>
@@ -39,13 +42,39 @@ const UserProfile = ({ location, match }) => {
             {
               undefined: <ProjectTab project={project} />,
               projects: <ProjectTab project={project} />,
-              notifications: <ProjectCard project={project[1]} />,
+              notifications: <NotificationTab notification={notification} />,
               requests: <ProjectCard project={project[2]} />
             }[tab]
           }
         </div>
       </div>
     </div>
+  );
+};
+
+const NotificationTab = ({ notification }) => {
+  return (
+    <div>
+      {notification.map((value, index) => {
+        return <NotificationCard key={index} notification={value} />;
+      })}
+    </div>
+  );
+};
+
+const NotificationCard = ({ notification }) => {
+  return (
+    <Link className="text-decoration-none text-dark" to={notification.link}>
+      <div className="card m-3 shadow">
+        <div className="card-body">
+          <h5 className="card-title">"notification"</h5>
+          <p className="text-muted">{notification.description}</p>
+          <div className="d-flex justify-content-end">
+            <FontAwesomeIcon icon={faArrowRight} size="2x" />
+          </div>
+        </div>
+      </div>
+    </Link>
   );
 };
 
