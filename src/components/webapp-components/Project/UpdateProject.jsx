@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { project } from "../../mock-model/projects";
+import { project } from "../../../mock-model/projects";
 import { EditProject } from "./ProjectInputField";
 const UpdateProject = ({ match }) => {
   const { id } = match.params;

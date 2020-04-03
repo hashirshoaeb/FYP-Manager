@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../webapp-components/Project/ProjectCard";
 import { project } from "../../mock-model/projects";
 import { Link } from "react-router-dom";
 

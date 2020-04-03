@@ -1,6 +1,11 @@
+// Deprecate
+//
+//
+//
+// will use Read project instead // with same search functionality
 import React, { useState } from "react";
 import { project } from "../../mock-model/projects";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../webapp-components/Project/ProjectCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -30,7 +35,7 @@ const ProjectShow = props => {
 
   return (
     <div className="bg-light">
-      <div className="container">
+      <div className="container-lg">
         <h1 className="display-4 text-center">All Projects</h1>{" "}
         <div className=" d-flex justify-content-center my-5">
           <FontAwesomeIcon icon={faSearch} size="3x" />
@@ -46,7 +51,7 @@ const ProjectShow = props => {
         </div>
         <div className="row ">
           {data.map((d, i) => (
-            <div key={i} className="col-md-4 ">
+            <div key={i} className="col-md-6 ">
               <Link className="btn" to={`projects/${i}`}>
                 <ProjectCard project={d}> </ProjectCard>{" "}
               </Link>

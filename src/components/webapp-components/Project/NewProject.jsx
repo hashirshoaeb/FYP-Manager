@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { EditProject } from "./ProjectInputField";
-import { milestone } from "../../mock-model/milestones";
+import { milestone } from "../../../mock-model/milestones";
 
-const AddProject = ({ value }) => {
+const NewProject = ({ value }) => {
   const handleSubmit = data => {
     console.log(data);
   };
@@ -13,4 +13,4 @@ const AddProject = ({ value }) => {
   );
 };
 
-export default AddProject;
+export default NewProject;

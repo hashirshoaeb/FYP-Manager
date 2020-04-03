@@ -13,8 +13,8 @@ import About from "./components/website-components/About";
 import ProjectShow from "./components/website-components/ProjectShow";
 import ReadProject from "./components/website-components/ReadProject";
 import UserProfile from "./components/webapp-components/UserProfile";
-import AddProject from "./components/webapp-components/AddProjects";
-import UpdateProject from "./components/webapp-components/UpdateProject";
+import NewProject from "./components/webapp-components/Project/NewProject";
+import UpdateProject from "./components/webapp-components/Project/UpdateProject";
 import Setting from "./components/webapp-components/Setting";
 import Milestone from "./components/webapp-components/Milestone";
 
@@ -41,7 +41,7 @@ function App() {
         <Route path="/projects/:id" component={ReadProject} />
         {/* Dymanic Stuff now */}
         <Route path="/signup" component={SignUp} />
-        <Route path="/new" component={AddProject} />
+        <Route path="/new" component={NewProject} />
         <Route path="/update/:id" component={UpdateProject} />
         <Route path="/setting" component={Setting} />
         <Route path="/milestone" component={Milestone} />

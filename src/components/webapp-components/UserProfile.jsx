@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import queryString from "query-string";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ProjectCard from "./Project/ProjectCard";
 import image from "../../asserts/collaboration.svg";
 import { project } from "../../mock-model/projects";
 import { user } from "../../mock-model/users";
+import { request } from "../../mock-model/requests";
 import { notification } from "../../mock-model/notifications";
 // import ProjectCard from "../website-components/ProjectCard";
 const UserProfile = ({ location, match }) => {
@@ -43,7 +45,7 @@ const UserProfile = ({ location, match }) => {
               undefined: <ProjectTab project={project} />,
               projects: <ProjectTab project={project} />,
               notifications: <NotificationTab notification={notification} />,
-              requests: <ProjectCard project={project[2]} />
+              requests: <RequestTab request={request} />
             }[tab]
           }
         </div>
@@ -51,7 +53,30 @@ const UserProfile = ({ location, match }) => {
     </div>
   );
 };
+const RequestTab = ({ request }) => {
+  return (
+    <div>
+      {request.map((value, index) => {
+        return <RequestCard key={index} request={value} />;
+      })}
+    </div>
+  );
+};
 
+const RequestCard = ({ request }) => {
+  return (
+    <div>
+      <div className="card m-3 shadow">
+        <div className="card-body">
+          <h5 className="card-title">"request"</h5>
+          <p className="text-muted">{`${request.from} send request for ${request.for}`}</p>
+          <button className="btn btn-primary mx-3">Accept</button>
+          <button className="btn btn-danger mx-3">Reject</button>
+        </div>
+      </div>
+    </div>
+  );
+};
 const NotificationTab = ({ notification }) => {
   return (
     <div>
@@ -81,28 +106,18 @@ const NotificationCard = ({ notification }) => {
 const ProjectTab = ({ project }) => {
   return (
     <div>
+      <Link
+        className="btn btn-primary text-decoration-none text-light"
+        to="/new"
+      >
+        New Project
+      </Link>
+      <Link className="btn btn-primary text-decoration-none text-light" to="">
+        Search Projects
+      </Link>
       {project.map((value, index) => {
         return <ProjectCard key={index} project={value} />;
       })}
-    </div>
-  );
-};
-
-const ProjectCard = ({ project }) => {
-  return (
-    <div className="card m-3 shadow">
-      <div className="card-body">
-        <h5 className="card-title">{project.title}</h5>
-        <p className="text-muted">{project.description}</p>
-        {project.tags.map(t => (
-          <div key={t} className=" btn btn-outline-dark btn-sm  m-2">
-            {t}
-          </div>
-        ))}
-        <div className="d-flex justify-content-end">
-          <FontAwesomeIcon icon={faArrowRight} size="2x" />
-        </div>
-      </div>
     </div>
   );
 };
