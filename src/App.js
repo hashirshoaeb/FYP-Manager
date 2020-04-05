@@ -11,7 +11,7 @@ import Working from "./components/website-components/Working";
 import Footer from "./components/website-components/Footer";
 import About from "./components/website-components/About";
 import ProjectShow from "./components/website-components/ProjectShow";
-import ReadProject from "./components/website-components/ReadProject";
+import ReadProject from "./components/webapp-components/Project/ReadProject";
 import UserProfile from "./components/webapp-components/UserProfile";
 import NewProject from "./components/webapp-components/Project/NewProject";
 import UpdateProject from "./components/webapp-components/Project/UpdateProject";
